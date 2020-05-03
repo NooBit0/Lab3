@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApp1.View.SortingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.View"
+        mc:Ignorable="d"
+        Title="SortingWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Background="Gray">
+        <DataGrid x:Name="EmployeeGrid"  HorizontalAlignment="Center" Height="320" VerticalAlignment="Top" Width="800" Loaded="EmployeeGrid_Loaded" ItemsSource="{Binding Employees}"
+                  />
+    </Grid>
+</Window>
